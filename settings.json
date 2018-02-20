@@ -1,0 +1,10 @@
+{
+  "activity": "WORK IN PROGRESS",
+  "status": "idle",
+  "botchannel": "bot-log",
+  "ownerid": "YOUR_DISCORD_ID",
+  "adminrolename": "Administrator",
+  "modrolename": "Moderator",
+  "token": "YOUR_TOKEN_HERE",
+  "prefix": "~"
+}
