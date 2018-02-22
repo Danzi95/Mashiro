@@ -1,5 +1,5 @@
-const settings = require('../settings.json');
 const Discord = require('discord.js');
+const settings = require('../settings.json');
 module.exports = client => { // eslint-disable-line no-unused-vars
   console.log(`Logged in as ${client.user.tag}! <3`);
 /** DONT FORGET TO UNCOMMENT!
