@@ -46,7 +46,7 @@ exports.conf = {
 
 exports.help = {
   name: 'set',
-  description: 'Changes prefix for all commands',
-  detaileddescription: 'Changes the prefix for all commands\nNo argument sets it to ~',
-  usage: 'set<prefix> '
+  description: 'Does changes to the settings file',
+  detaileddescription: 'Does changes to the settings file\n\nsetprefix <prefix>\nsetstatus <online | idle | dnd | invisible>\nsetactivity <activity>\nsetbotchannel <channelname>\nsetadminrole <rolename>\nsetmodrole <rolename>',
+  usage: 'set<prefix> <args>'
 };
