@@ -5,16 +5,16 @@ var queue=[];
 
 module.exports = (oldMember, newMember) => {
   const client = newMember.client;
-  if(oldMember.voiceChannelID==null && newMember.voiceChannelID=='359341483364712450'){
+  if(newMember.voiceChannelID=='359341483364712450'){
     if(newMember.id=='141180008453373952')queue.push('../voice/Danzi.mp3');
+    if(newMember.id=='281867472498589697')queue.push('../voice/Aksis.mp3');
     queue.push('../voice/entered_this_channel.mp3');
   };
-  queue.push('../voice/Danzi.mp3');
-  queue.push('../voice/entered_this_channel.mp3');
 
   if(!client.channels.get('359341483364712450').voiceConnection) client.channels.get('359341483364712450').join().then(connection => {
     while(queue.length>0){
         let dispatcher = connection.playFile(queue[0]);
+        console.log(queue[0]);
         dispatcher.on('end', ()=> {queue.shift()});
     }
   })
@@ -48,7 +48,7 @@ module.exports = (oldMember, newMember) => {
 **/
 
 		if (oldMember.id === '141180008453373952' && newMember.id === '141180008453373952') {
-      console.log('oldMember: '+oldMember.username);
+      console.log(oldMember.user.username);
 
 		};
 
