@@ -14,9 +14,8 @@ module.exports = (oldMember, newMember) => {
 
   if(!client.channels.get('359341483364712450').voiceConnection) client.channels.get('359341483364712450').join().then(connection => {
     while(queue.length>0){
-        let dispatcher = connection.playFile(queue[1]);
+        let dispatcher = connection.playFile(queue[0]);
         dispatcher.on('end', ()=> {queue.shift()});
-        dispatcher = connection.playFile(queue[0]);
     }
   })
   .catch(console.error);
