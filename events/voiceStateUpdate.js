@@ -5,6 +5,9 @@ var queue=[];
 
 module.exports = (oldMember, newMember) => {
   const client = newMember.client;
+  console.log('voiceStateUpdate: '+oldMember.user.username);
+  client.channels.get(newMember.guild.channels.find('name', settings.botchannel).id).send('voiceStateUpdate: '+oldMember.user.username);
+
   if(newMember.voiceChannelID=='359341483364712450'){
     if(newMember.id=='141180008453373952')queue.push('../voice/Danzi.mp3');
     if(newMember.id=='281867472498589697')queue.push('../voice/Aksis.mp3');
@@ -15,6 +18,7 @@ module.exports = (oldMember, newMember) => {
     while(queue.length>0){
         let dispatcher = connection.playFile(queue[0]);
         console.log(queue[0]);
+        client.channels.get(newMember.guild.channels.find('name', settings.botchannel).id).send(queue[0]);
         dispatcher.on('end', ()=> {queue.shift()});
     }
   })
@@ -46,10 +50,4 @@ module.exports = (oldMember, newMember) => {
       }, 60000);
   }
 **/
-
-		if (oldMember.id === '141180008453373952' && newMember.id === '141180008453373952') {
-      console.log(oldMember.user.username);
-
-		};
-
 };
