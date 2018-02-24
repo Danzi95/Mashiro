@@ -1,5 +1,5 @@
 # Mashiro
-Mashiro is my `little` discord bot project to have a private bot for better music stream performence.
+Mashiro is my *little* discord bot project to have a private bot for better music stream performence.
 And if I already decided to create a bot why shouldn't I design it perfectly for my server?
 
 **Bot is not designed for multiple servers!**
