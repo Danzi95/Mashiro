@@ -1,3 +1,3 @@
 # Mashiro
 
-![My image](https://ibb.co/k70G3H)
+![My image](https://image.ibb.co/nfbpOH/Mashiro.png)
