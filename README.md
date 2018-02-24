@@ -1,6 +1,6 @@
 # Mashiro
 Mashiro is my `little` discord bot project to have a private bot for better music stream performence.
-And if we already decided to create a bot why shouldnt I designed it perfectly for my server?
+And if I already decided to create a bot why shouldn't I design it perfectly for my server?
 
 **Bot is not designed for multiple servers!**
 
