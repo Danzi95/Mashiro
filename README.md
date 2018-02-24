@@ -1,3 +1,3 @@
 # Mashiro
 
-[My image](github.com/Danzi95/Mashiro/blob/master/Mashiro.png)
+![My image](raw.githubusercontent.com/Danzi95/Mashiro/master/Mashiro.png)
