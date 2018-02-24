@@ -1,3 +1,3 @@
 # Mashiro
 
-![My image](raw.githubusercontent.com/Danzi95/Mashiro/master/Mashiro.png)
+![My image](https://ibb.co/k70G3H)
