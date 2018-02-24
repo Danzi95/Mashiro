@@ -5,11 +5,11 @@ exports.run = (client, message, args) => {
   test.push('this');
   test.push('that');
   //client.channels.get('359341483364712450').join();
-while(test.length>0){
+
   const embed = new Discord.RichEmbed()
     .setColor('#7289DA')//color, Can be a Hex Literal, Hex String, Number, RGB Array or 'DEFAULT', 'RANDOM'
     //.setAuthor(message.author.username, message.author.displayAvatarURL) //name,[icon],[url]
-    .setTitle('test') //title
+    .setTitle(message.author) //title
     //.setURL('https://youtu.be/2uhxrPhVO8Y') //url
     .setDescription(`${test[0]} [${test.length}]`) //description
     //.addField(`Test *Test*`,`Test *Test*`+`more`,true); //name, value, [inline]
@@ -20,8 +20,8 @@ while(test.length>0){
     //.setTimestamp(); //[timestamp]
 
   message.author.send({embed});
-  test.shift();
-}
+
+
   //  client.channels.get('359467924194590723').send('Ping?')
   //    .then(msg => {
   //      msg.edit(`Pong!  \`${msg.createdTimestamp - message.createdTimestamp}ms\``);
